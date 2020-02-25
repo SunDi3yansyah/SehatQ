@@ -1,0 +1,19 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.6.5
+  - ruby-head
+branches:
+  only:
+    - master
+cache: bundler
+before_install:
+  - travis_retry gem update --system
+  - travis_retry gem install bundler
+install:
+  - travis_retry bundle install
+  - travis_retry bundle update
+  - bundle install --without development production
+  - rspec
+notifications:
+  email: false

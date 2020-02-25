@@ -1,0 +1,10 @@
+en:
+  # Account in Controllers
+  account_you_are_signed_in: "You are signed in"
+  account_identity_does_not_exist: "Identity (email/phone) does not exist"
+  account_password_cant_be_blank: "Password can't be blank"
+  account_password_does_not_exist: "Your account password does not exist, please forget your password"
+  account_password_is_invalid: "Password is invalid"
+  account_successfully_logged_in: "You have successfully logged in"
+  account_has_not_been_verified: "Your account has not been verified"
+  account_was_created_successfully: "Your account was created successfully"
