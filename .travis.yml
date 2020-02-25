@@ -13,8 +13,8 @@ before_install:
 install:
   - travis_retry bundle install
   - travis_retry bundle update
-  - bundle install --without development production
+  - bundle install
   - rails db:migrate
-  - rspec
+  - bundle exec rspec
 notifications:
   email: false
