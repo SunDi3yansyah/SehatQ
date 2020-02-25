@@ -12,6 +12,7 @@ before_install:
   - travis_retry gem install bundler
 install:
   - travis_retry bundle install
+  - RAILS_ENV=development bundle exec rails db:migrate --trace
   - RAILS_ENV=test bundle exec rails db:migrate --trace
   - bundle exec rails db:test:prepare
   - bundle exec rspec spec/
