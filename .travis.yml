@@ -14,6 +14,7 @@ install:
   - travis_retry bundle install
   - travis_retry bundle update
   - bundle install --without development production
+  - rails db:migrate
   - rspec
 notifications:
   email: false
