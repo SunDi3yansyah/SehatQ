@@ -1,4 +1,4 @@
-name: Ruby, Rails API and SQLite
+name: SehatQ App build with Ruby on Rails
 on: [push]
 jobs:
   build:
