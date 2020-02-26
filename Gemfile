@@ -48,3 +48,6 @@ gem 'jwt', '~> 2.2'
 gem 'kaminari', '~> 1.2'
 gem 'oj', '~> 3.10'
 gem 'validates_email_format_of', '~> 1.6'
+
+# Security Alerts
+gem 'nokogiri', '>= 1.10.8'
