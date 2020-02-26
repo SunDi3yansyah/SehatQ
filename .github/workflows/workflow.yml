@@ -19,6 +19,9 @@ jobs:
       - name: Build and create DB
         env:
           RAILS_ENV: test
+          RAILS_MASTER_KEY: 6a7aec1c052199d2c11a2aa84142e5d4
+          SECRET_KEY_BASE: 40f09c453aa555adabe8e46f7fc0ad48915065ab037f5654eb7a5ddaebeea3af79ddbf5f12be504bfc01947ceab1e2ff435320689a57da0f3187761a976e1584
+          SECRET_TOKEN: 8199f02af5268cb809eea336c8a9c2d7e6aa1888de2b0ee6ab0496d637b74dbb0dbed6350c679e196676ff89debd04ec9caa373ae5689a16859cc39133144c10
         run: |
           gem update --system
           gem install bundler
