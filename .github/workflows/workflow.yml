@@ -1,8 +1,8 @@
-name: Ruby
+name: Ruby, Rails API and SQLite
 on: [push]
 jobs:
   build:
-    name: Run Build
+    name: Build Repository
     runs-on: ubuntu-latest
     steps:
       - name: Set up Checkout
@@ -13,7 +13,9 @@ jobs:
         with:
           version: 2.6.5
 
-      - name: Setup Source
+      - name: Build and create DB
+        env:
+          RAILS_ENV: test
         run: |
           gem update --system
           gem install bundler
