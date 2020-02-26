@@ -8,11 +8,6 @@ jobs:
       - name: Actions Checkout
         uses: actions/checkout@master
 
-      - name: Actions Setup Ruby 2.6.x
-        uses: actions/setup-ruby@master
-        with:
-          version: 2.6.x
-
       - name: Setup Source
         run: |
           gem update --system
