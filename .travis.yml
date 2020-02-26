@@ -11,8 +11,8 @@ before_install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
 install:
-  - bundle install --binstubs
-  - ./bin/rails db:migrate RAILS_ENV=test
-  - ./bin/rspec spec
+  - bundle exec bundle install
+  - bundle exec rails db:setup
+  - bundle exec rspec spec
 notifications:
   email: false
