@@ -13,7 +13,7 @@ before_install:
 install:
   - bundle config path vendor/bundle
   - bundle install --jobs 4 --retry 3
-  - bundle exec rails db:setup db:test:prepare RAILS_ENV=test
-  - bundle exec rspec spec
+  - bundle exec rails db:create db:schema:load db:test:prepare RAILS_ENV=test
+  - bundle exec rspec --color --format documentation --require spec_helper --require rails_helper
 notifications:
   email: false

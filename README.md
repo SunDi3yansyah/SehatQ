@@ -6,7 +6,7 @@
 
 
 ## Status
-
+![SehatQ App build with Ruby on Rails](https://github.com/SunDi3yansyah/SehatQ/workflows/SehatQ%20App%20build%20with%20Ruby%20on%20Rails/badge.svg?branch=master)
 [![Build Status](https://travis-ci.org/SunDi3yansyah/SehatQ.svg)](https://travis-ci.org/SunDi3yansyah/SehatQ)
 [![GitHub last commit](https://img.shields.io/github/last-commit/SunDi3yansyah/SehatQ.svg)](https://github.com/SunDi3yansyah/SehatQ/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues/SunDi3yansyah/SehatQ.svg)](https://github.com/SunDi3yansyah/SehatQ/issues)
