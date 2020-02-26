@@ -1,0 +1,21 @@
+name: Ruby
+on: [push]
+jobs:
+  build:
+    name: Run Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions Checkout
+        uses: actions/checkout@master
+
+      - name: Actions Setup Ruby 2.6.x
+        uses: actions/setup-ruby@master
+        with:
+          version: 2.6.x
+
+      - name: Setup Source
+        run: |
+          gem update --system
+          gem install bundler
+          bundle install
+          rspec spec
