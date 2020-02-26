@@ -11,7 +11,7 @@ before_install:
   - travis_retry gem update --system
   - travis_retry gem install bundler
 install:
-  - bundle exec bundle install
+  - bundle install
   - bundle exec rails db:setup
   - bundle exec rspec spec
 notifications:
