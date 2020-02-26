@@ -25,4 +25,4 @@ jobs:
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
           bin/rails db:setup
-          rspec spec
+          bundle exec rspec spec
