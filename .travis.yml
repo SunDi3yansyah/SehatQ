@@ -13,7 +13,8 @@ before_install:
 install:
   - bundle config path vendor/bundle
   - bundle install --jobs 4 --retry 3
-  - bin/rails db:migrate
-  - rspec spec
+  - rails db:migrate db:test:prepare
+  - rails db:migrate RAILS_ENV=test
+  - bundle exec rspec spec
 notifications:
   email: false
