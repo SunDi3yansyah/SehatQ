@@ -3,7 +3,8 @@ class Patient::V1::BookingsController < ApplicationController
   before_action :set_booking, only: [:show]
 
   def index
-    @bookings = paginate Patient::V1::Booking.order(id: sort_order(params[:_order])), per_page: params[:_limit]
+    @bookings = paginate Patient::V1::Booking.includes(:hospital, :doctor, :patient)
+                  .order(id: sort_order(params[:_order])), per_page: params[:_limit]
     api each_serializer @bookings, Patient::V1::BookingSerializer
   end
 
@@ -35,6 +36,7 @@ class Patient::V1::BookingsController < ApplicationController
   end
 
   private
+
   def set_booking
     @booking = validate_params Patient::V1::Booking.find(params[:id])
   end
