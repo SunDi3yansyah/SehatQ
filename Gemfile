@@ -43,7 +43,7 @@ end
 
 gem 'active_model_serializers', '~> 0.10'
 gem 'api-pagination', '~> 4.8'
-gem 'httparty', '~> 0.18'
+gem 'httparty', '~> 0.21'
 gem 'jwt', '~> 2.2'
 gem 'kaminari', '~> 1.2'
 gem 'oj', '~> 3.10'
